@@ -1,0 +1,253 @@
+/* Resetting and setting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9fafb;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Section */
+header {
+    background-color: #1e293b; /* Dark background */
+    color: white;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo img {
+    height: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #1e293b;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #3b82f6, #1e40af);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+.hero-btns {
+    margin-top: 30px;
+}
+
+.hero .btn-primary,
+.hero .btn-secondary {
+    background-color: #fbbf24;
+    color: #1e293b;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px;
+    transition: background-color 0.3s;
+}
+
+.hero .btn-primary:hover,
+.hero .btn-secondary:hover {
+    background-color: #e4a10e;
+}
+
+/* About Us Section */
+.about-us {
+    padding: 50px 20px;
+    background-color: #f0f4c3;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Featured Books Section */
+.featured-books {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ffffff;
+}
+
+.featured-books h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #1e293b;
+}
+
+.book-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.book-card {
+    background-color: white;
+    padding: 30px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.book-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.book-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.book-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+.book-card .btn-secondary {
+    background-color: #3b82f6;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.book-card .btn-secondary:hover {
+    background-color: #1e40af;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #e0f7fa;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #1e293b;
+}
+
+.testimonial-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.testimonial-card {
+    background-color: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.testimonial-card p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.testimonial-card span {
+    font-weight: bold;
+    color: #3b82f6;
+}
+
+/* Footer Section */
+footer {
+    background-color: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer .social-links {
+    margin-top: 10px;
+}
+
+footer .social-icon {
+    margin: 0 10px;
+}
+
+footer .social-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .book-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .book-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .testimonial-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
