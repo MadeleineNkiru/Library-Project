@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../assets/logo.png" alt="Library Logo">
+            <h1>Library App</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="authors.html">Authors</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Admin Dashboard</h2>
+            <div id="admin-actions">
+                <h3>Manage Books</h3>
+                <button onclick="addNewBook()">Add New Book</button>
+                <h3>Manage Users</h3>
+                <button onclick="viewAllUsers()">View All Users</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Library App. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function addNewBook() {
+            alert("Redirect to Add New Book Page");
+        }
+
+        function viewAllUsers() {
+            alert("Redirect to User Management Page");
+        }
+    </script>
+</body>
+</html>

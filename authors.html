@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authors</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../assets/logo.png" alt="Library Logo">
+            <h1>Library App</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="authors.html">Authors</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Our Authors</h2>
+            <div id="authors-container">
+                <!-- Authors dynamically loaded here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Library App. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const authors = [
+            { name: "Author A", books: 10 },
+            { name: "Author B", books: 5 },
+            { name: "Author C", books: 7 },
+        ];
+
+        const authorsContainer = document.getElementById("authors-container");
+
+        authors.forEach((author) => {
+            const authorCard = document.createElement("div");
+            authorCard.classList.add("author-card");
+            authorCard.innerHTML = `
+                <h3>${author.name}</h3>
+                <p>Books Written: ${author.books}</p>
+            `;
+            authorsContainer.appendChild(authorCard);
+        });
+    </script>
+</body>
+</html>

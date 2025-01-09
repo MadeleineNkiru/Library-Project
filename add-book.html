@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Book | Library App</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Library</h2>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="books.html">Books</a></li>
+          <li><a href="add-book.html" class="active">Add Book</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main>
+      <header class="header">
+        <h1>Add a New Book</h1>
+      </header>
+      <section class="content">
+        <form id="add-book-form">
+          <label for="title">Book Title:</label>
+          <input type="text" id="title" required>
+          
+          <label for="author">Author:</label>
+          <input type="text" id="author" required>
+          
+          <label for="pages">Number of Pages:</label>
+          <input type="number" id="pages" required>
+          
+          <label for="read">Have you read it?</label>
+          <select id="read">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+          
+          <button type="submit">Add Book</button>
+        </form>
+      </section>
+      <footer class="footer">
+        <p>&copy; 2025 Library App. All Rights Reserved.</p>
+      </footer>
+    </main>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
